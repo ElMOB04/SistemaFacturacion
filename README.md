@@ -15,14 +15,6 @@ acceso a datos **ADO.NET** sobre **SQL Server**, organizada en **3 capas**
 | Motor de base de datos | **SQL Server** (Express, Developer o **LocalDB**) |
 | Para compilar | Visual Studio 2022+ **o** el archivo `Compilar.bat` incluido |
 
-> ✅ **En este equipo ya está todo configurado:** hay **SQL Server 2025** en la instancia
-> `localhost` (autenticación de Windows), la base de datos **`SistemaFacturacionDB`** ya fue
-> creada y poblada con los datos de prueba, y `App.config` ya apunta a ella. Puedes ir
-> directo al paso **4 (Compilar y ejecutar)**.
->
-> *En otra computadora* (por ejemplo la del profesor) basta con instalar cualquier edición
-> de SQL Server —**Express**, **Developer** o **LocalDB**— y seguir los pasos 2 y 3.
-
 ---
 
 ## 2. Instalación de la base de datos
@@ -47,7 +39,7 @@ Edite el archivo **`App.config`** (o `bin\Debug\SistemaFacturacion.exe.config` s
 compilado) y ajuste el atributo `connectionString` según su instalación:
 
 ```xml
-<!-- localhost (valor configurado actualmente en este equipo) -->
+<!-- SQL Server local (instancia predeterminada) -->
 <add name="SistemaFacturacionDB"
      connectionString="Server=localhost;Database=SistemaFacturacionDB;Integrated Security=True;TrustServerCertificate=True;"
      providerName="System.Data.SqlClient" />
