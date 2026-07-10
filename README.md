@@ -112,3 +112,72 @@ SistemaFacturacion/
 - **Cuentas por Pagar:** Compras (con inventario) y Pagos.
 
 Consulte el informe completo en `Documentacion/Informe.md`.
+
+---
+
+## 8. Capturas de pantalla
+
+### Inicio de sesión
+Ventana de acceso con usuario y contraseña (hash SHA-256).
+
+![Inicio de sesión](Documentacion/Capturas/01_login.png)
+
+### Menú principal
+Ventana principal con todos los módulos y el usuario en sesión.
+
+![Menú principal](Documentacion/Capturas/02_menu.png)
+
+### Mantenimiento de Clientes
+Listado con saldos, límite de crédito y panel de datos.
+
+![Clientes](Documentacion/Capturas/03_clientes.png)
+
+### Productos y Servicios
+Catálogo con precios, costos y existencias (stock).
+
+![Productos](Documentacion/Capturas/04_productos.png)
+
+### Empleados
+Registro del personal que emite los documentos.
+
+![Empleados](Documentacion/Capturas/09_empleados.png)
+
+### Proveedores
+Gestión de proveedores y sus saldos por pagar.
+
+![Proveedores](Documentacion/Capturas/10_proveedores.png)
+
+### Usuarios
+Administración de cuentas de acceso y roles (solo Administrador).
+
+![Usuarios](Documentacion/Capturas/11_usuarios.png)
+
+### Facturación — listado
+Facturas con su tipo de pago, estado y saldo.
+
+![Facturas](Documentacion/Capturas/05_facturas.png)
+
+### Nueva factura
+Emisión de una factura con subtotal, ITBIS (18 %) y total.
+
+![Nueva factura](Documentacion/Capturas/05b_nuevafactura.png)
+
+### Registro de cobros
+Cobros aplicados a las facturas de crédito.
+
+![Cobros](Documentacion/Capturas/06_cobros.png)
+
+### Compras — listado
+Compras registradas a los proveedores.
+
+![Compras](Documentacion/Capturas/07_compras.png)
+
+### Nueva compra
+Registro de una compra a proveedor con su detalle.
+
+![Nueva compra](Documentacion/Capturas/07b_nuevacompra.png)
+
+### Registro de pagos
+Pagos realizados a los proveedores.
+
+![Pagos](Documentacion/Capturas/08_pagos.png)
