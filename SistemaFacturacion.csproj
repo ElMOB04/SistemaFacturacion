@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1B2C3D4-E5F6-47A8-9B0C-1D2E3F4A5B6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaFacturacion</RootNamespace>
+    <AssemblyName>SistemaFacturacion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Entidades\Empleado.cs" />
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Proveedor.cs" />
+    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\DetalleFactura.cs" />
+    <Compile Include="Entidades\Factura.cs" />
+    <Compile Include="Entidades\Cobro.cs" />
+    <Compile Include="Entidades\DetalleCompra.cs" />
+    <Compile Include="Entidades\Compra.cs" />
+    <Compile Include="Entidades\Pago.cs" />
+    <Compile Include="DatosAcceso\ConexionBD.cs" />
+    <Compile Include="DatosAcceso\UsuarioDAO.cs" />
+    <Compile Include="DatosAcceso\EmpleadoDAO.cs" />
+    <Compile Include="DatosAcceso\ClienteDAO.cs" />
+    <Compile Include="DatosAcceso\ProveedorDAO.cs" />
+    <Compile Include="DatosAcceso\ProductoDAO.cs" />
+    <Compile Include="DatosAcceso\FacturaDAO.cs" />
+    <Compile Include="DatosAcceso\CobroDAO.cs" />
+    <Compile Include="DatosAcceso\CompraDAO.cs" />
+    <Compile Include="DatosAcceso\PagoDAO.cs" />
+    <Compile Include="Negocio\Configuracion.cs" />
+    <Compile Include="Negocio\Seguridad.cs" />
+    <Compile Include="Negocio\Validaciones.cs" />
+    <Compile Include="Negocio\Sesion.cs" />
+    <Compile Include="Negocio\UsuarioNegocio.cs" />
+    <Compile Include="Negocio\EmpleadoNegocio.cs" />
+    <Compile Include="Negocio\ClienteNegocio.cs" />
+    <Compile Include="Negocio\ProveedorNegocio.cs" />
+    <Compile Include="Negocio\ProductoNegocio.cs" />
+    <Compile Include="Negocio\FacturaNegocio.cs" />
+    <Compile Include="Negocio\CobroNegocio.cs" />
+    <Compile Include="Negocio\CompraNegocio.cs" />
+    <Compile Include="Negocio\PagoNegocio.cs" />
+    <Compile Include="Presentacion\UI.cs" />
+    <Compile Include="Presentacion\FrmLogin.cs" />
+    <Compile Include="Presentacion\FrmPrincipal.cs" />
+    <Compile Include="Presentacion\FrmClientes.cs" />
+    <Compile Include="Presentacion\FrmProveedores.cs" />
+    <Compile Include="Presentacion\FrmProductos.cs" />
+    <Compile Include="Presentacion\FrmEmpleados.cs" />
+    <Compile Include="Presentacion\FrmUsuarios.cs" />
+    <Compile Include="Presentacion\FrmFacturaNueva.cs" />
+    <Compile Include="Presentacion\FrmFacturas.cs" />
+    <Compile Include="Presentacion\FrmCobros.cs" />
+    <Compile Include="Presentacion\FrmCompraNueva.cs" />
+    <Compile Include="Presentacion\FrmCompras.cs" />
+    <Compile Include="Presentacion\FrmPagos.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

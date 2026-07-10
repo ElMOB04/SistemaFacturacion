@@ -1,0 +1,12 @@
+# Compilados / salidas de build
+bin/
+obj/
+
+# Archivos de Visual Studio
+.vs/
+*.user
+*.suo
+
+# Archivos temporales
+*.tmp
+~$*
